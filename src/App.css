@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+.Titlename {
+  color: rgb(217, 219, 227);
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 2px 2px #c42636;
+  transition-duration: 3s;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg {
+  background-image: url("./image/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.for-btn {
+  color: black;
+  border-radius: 10px;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.col-md-4 {
+  /* background-color: rgb(11, 11, 11); */
+  /* border-style:ridge; */
+  border-width: 10px;
+  border-radius: 100px;
+  justify-content: space-between;
+}
+
+.btn:hover {
+  color: rgb(19, 18, 18);
+  font-size: larger;
+}
+
+.card-img-top {
+  border-radius: 10px;
+  border-top: black;
+
+}
+
+.card {
+  justify-content: space-around;
+  border-radius: 20px;
+  border-width: 6px;
+  border-color: black;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+}
+
+.row {
+  background-attachment: fixed;
+}
+
+.totext {
+  border-radius: 10px;
+  block-size: 50px;
+}
+
+@media screen and (max-width:600px) {
+  .Titlename h2 {
+    justify-content: center;
+    font-size:medium;
+    padding-left: 10px;
+   
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .bg{
+    justify-content: center;
+    overflow-x: hidden;
   }
-  to {
-    transform: rotate(360deg);
+  .col-md-4 {
+    border-radius: 10px;
+    border-width: 10px;
   }
+  .btn:hover{
+    font-size: small;
+  }
+  .for-btn{
+    text-align: center;
+    margin-left: 25px;
+    font-size: small;
+    font-size: 10px;
+  }
+  .card{
+  border-radius: 10px;
+  border-width: 4px;
+  border-color: black;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  
+  }
+  .col-md-4{
+    font-size: small;
+    display: flex;
+    justify-content: space-around;
+   
+  }
+
 }
