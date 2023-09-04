@@ -10,10 +10,12 @@
 }
 
 .bg {
+  /* min-width: 400px; */
   background-image: url("./image/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  min-height: 100vh;
+  /* height: 500px; */
   overflow-x: hidden;
 }
 
@@ -31,11 +33,6 @@
   border-width: 10px;
   border-radius: 100px;
   justify-content: space-between;
-}
-
-.btn:hover {
-  color: rgb(19, 18, 18);
-  font-size: larger;
 }
 
 .card-img-top {
@@ -60,46 +57,60 @@
 
 .totext {
   border-radius: 10px;
-  block-size: 50px;
+  font-size: 16px;
+  padding: 3px 10px;
+  border: none;
+  width: 30%;
+
 }
 
-@media screen and (max-width:600px) {
-  .Titlename h2 {
+@media (max-width:650px) {
+
+  .bg {
     justify-content: center;
-    font-size:medium;
-    padding-left: 10px;
-   
+    background-size: cover;
+    background: linear-gradient(black, rgb(6, 6, 69) ,rgb(239, 26, 179),black);
+    /* background-image: none; */
+    /* background-image: url('./image/mobie_bg.jpg'); */
   }
-  .bg{
-    justify-content: center;
-    overflow-x: hidden;
-  }
+
   .col-md-4 {
     border-radius: 10px;
     border-width: 10px;
   }
-  .btn:hover{
+
+  /* .btn:hover{
     font-size: small;
-  }
-  .for-btn{
+  } */
+  .for-btn {
     text-align: center;
     margin-left: 25px;
     font-size: small;
     font-size: 10px;
   }
-  .card{
-  border-radius: 10px;
-  border-width: 4px;
-  border-color: black;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  
+
+  .card {
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
   }
-  .col-md-4{
+
+  .col-md-4 {
     font-size: small;
     display: flex;
     justify-content: space-around;
-   
+
   }
 
+  .totext {
+    border: 2px solid black;
+  }
+
+  .Titlename {
+    font-size: 20px;
+
+  }
 }
