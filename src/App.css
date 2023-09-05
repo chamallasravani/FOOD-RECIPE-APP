@@ -15,11 +15,11 @@
 }
 
 .bg {
-  background-image: url("./image/bg.jpg");
+  background:linear-gradient(black, rgb(98, 98, 214), pink, black);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 
 
@@ -89,28 +89,12 @@
   background-color: rgba(72, 178, 202, 0.84);
 }
 
-@media (max-width:650px) {
-
-  .bg {
-    justify-content: center;
-    background-size: cover;
-    background: linear-gradient(black, rgb(6, 6, 69) ,rgb(239, 26, 179),black);
-  }
-
+@media screen and (max-width : 850px) {
   .row{
     flex-direction: column;
-    
   }
-
   .cards{
-    width: 80%;
+    width: 90%;
     margin: 1em auto;
-  }
-
-  .for-btn {
-    text-align: center;
-    margin-left: 25px;
-    font-size: small;
-    font-size: 10px;
   }
 }
