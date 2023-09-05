@@ -1,22 +1,22 @@
 import React from 'react'
 
-const Products = ({data}) => {
+const Products = ({ data }) => {
     return (
         <div>
             <div className="row">
-                {data.map(data =>  
-                <div className="col-md-4">
-                    <div class="card" style={{"width": "18rem" }}>
-                    <img class="card-img-top" src={data.recipe.image} alt="Card image cap" />
-                    <div class="card-body">
-                    <center>
-                        <h5 class="card-title">{data.recipe.label}</h5>
-                        <p class="card-text">Total Amount Of Calories : {Math.round(data.recipe.calories)}</p>
-                        <a href="#" class="btn btn-primary">Buy</a>
-                        </center>
+                {data.map(data =>
+                    <div className="cards">
+                        <div>
+                            <img className="card-img-top" src={data.recipe.image} alt="Card image cap" />
+                            <div class="card-body">
+                                <div className='card-footer'>
+                                    <h5 class="card-title">{data.recipe.label}</h5>
+                                    <p class="card-text">Total Amount Of Calories : {Math.round(data.recipe.calories)}</p>
+                                    <button className='btn'>Buy</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                </div>
                 )}
             </div>
         </div>

@@ -23,7 +23,7 @@ const App = () => {
         </div>
         <form onSubmit={submitHandler} className='for-btn'>
             <input type="text" className='totext' value={search} onChange={(e) => setSearch(e.target.value)} placeholder='Search for food...   e.g: chicken'/><br /><br />
-            <input type="submit" className="btn btn-primary" value="Search" /><br /><br />
+            <input type="submit" className="btn" value="Search" /><br /><br />
           </form>
           {data.length >= 1 ? <Products data={data} /> : null}
       </center>
